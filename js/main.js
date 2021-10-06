@@ -274,85 +274,85 @@ window.addEventListener('load' , (e) => {
 
 // Languages
 
-const changeLanguagesBtn= document.querySelector('.language-div');
-const changeLanguagesBtnTextContent= document.querySelector('.language-div p');
-const homeSection_home_text_p = document.querySelector('.home-section .home-text p')
-const homeSection_home_text_h2 = document.querySelector('.home-section .home-text h2')
-const homeSection_home_text_h1 = document.querySelector('.home-section .home-text h1')
-const more_about_me_btn = document.querySelector('.home-section .more_about_me_btn')
-const about_section_title = document.querySelector('.about-section .section-title h2')
-const service_section_title = document.querySelector('.service-section .section-title h2')
-const portfolio_section_title = document.querySelector('.portfolio-section .section-title h2')
-const contact_section_title = document.querySelector('.contact-section .section-title h2')
-const about_section_info_first_p = document.querySelector('.about-section .about-info .first_p')
-const about_section_info_second_p = document.querySelector('.about-section .about-info .second_p')
-const about_section_info_download_cv_btn = document.querySelector('.about-section .about-info .download_cv_btn')
-const about_section_info_hire_me_btn = document.querySelector('.about-section .about-info .hire_me_btn')
-const about_section_about_tabs_skills_span = document.querySelector('.about-section .about-tabs .skills_span')
-const about_section_about_tabs_education_span = document.querySelector('.about-section .about-tabs .education_span')
-const about_section_about_tabs_experience_span = document.querySelector('.about-section .about-tabs .experience_span')
-const about_section_first_experience__item_span = document.querySelector('.about-section .experience .first_experience__item_span')
-const about_section_education_first_education_timeline_p = document.querySelector('.education .first_education_timeline_p')
-const about_section_education_first_education_timeline_h3 = document.querySelector('.education .first_education_timeline_h3')
-const about_section_education_first_education_timeline_span = document.querySelector('.education .first_education_timeline_span')
-const about_section_second_experience__item_span = document.querySelector('.about-section .experience .second_experience__item_span')
-const contact_item_phone = document.querySelector('.contact-section .contact_item_phone span')
-const contact_send_message = document.querySelector('.contact-section .contact-form .submit-btn button')
-const contact_name_input = document.querySelector('.contact-section .contact-form .name_input')
+// const changeLanguagesBtn= document.querySelector('.language-div');
+// const changeLanguagesBtnTextContent= document.querySelector('.language-div p');
+// const homeSection_home_text_p = document.querySelector('.home-section .home-text p')
+// const homeSection_home_text_h2 = document.querySelector('.home-section .home-text h2')
+// const homeSection_home_text_h1 = document.querySelector('.home-section .home-text h1')
+// const more_about_me_btn = document.querySelector('.home-section .more_about_me_btn')
+// const about_section_title = document.querySelector('.about-section .section-title h2')
+// const service_section_title = document.querySelector('.service-section .section-title h2')
+// const portfolio_section_title = document.querySelector('.portfolio-section .section-title h2')
+// const contact_section_title = document.querySelector('.contact-section .section-title h2')
+// const about_section_info_first_p = document.querySelector('.about-section .about-info .first_p')
+// const about_section_info_second_p = document.querySelector('.about-section .about-info .second_p')
+// const about_section_info_download_cv_btn = document.querySelector('.about-section .about-info .download_cv_btn')
+// const about_section_info_hire_me_btn = document.querySelector('.about-section .about-info .hire_me_btn')
+// const about_section_about_tabs_skills_span = document.querySelector('.about-section .about-tabs .skills_span')
+// const about_section_about_tabs_education_span = document.querySelector('.about-section .about-tabs .education_span')
+// const about_section_about_tabs_experience_span = document.querySelector('.about-section .about-tabs .experience_span')
+// const about_section_first_experience__item_span = document.querySelector('.about-section .experience .first_experience__item_span')
+// const about_section_education_first_education_timeline_p = document.querySelector('.education .first_education_timeline_p')
+// const about_section_education_first_education_timeline_h3 = document.querySelector('.education .first_education_timeline_h3')
+// const about_section_education_first_education_timeline_span = document.querySelector('.education .first_education_timeline_span')
+// const about_section_second_experience__item_span = document.querySelector('.about-section .experience .second_experience__item_span')
+// const contact_item_phone = document.querySelector('.contact-section .contact_item_phone span')
+// const contact_send_message = document.querySelector('.contact-section .contact-form .submit-btn button')
+// const contact_name_input = document.querySelector('.contact-section .contact-form .name_input')
 
 
 
-let language = 'az';
-changeLanguagesBtn.addEventListener('click' , (e) => {
-    if(language == 'az'){
-        changeLanguagesBtnTextContent.innerHTML = 'EN';
-        language = 'en';
-        homeSection_home_text_p.innerHTML = 'Salam';
-        homeSection_home_text_h2.innerHTML = "Mən Muxtar";
-        homeSection_home_text_h1.innerHTML = "Web Designer & Developer";
-        more_about_me_btn.innerHTML = "Haqqımda Daha Çox";
-        about_section_title.innerHTML = "Mənim Haqqımda";
-        about_section_info_first_p.innerHTML = '<span>Salam! Mənim adım Muxtardır. Mən Web Developerəm.</span>Yeni və yüksək texnologiyaları araşdırmağı və örgənməyi sevirəm.Bu işi də sevirəm)).Mən hələdə bu işi örgənirəm, yeniliklərə açığam,dayanmadan özümü inkişaf etdirməyə çalışıram.Lakin az yaşıma baxmayaraq bir çox sahəyə hakiməm.'
-        about_section_info_second_p.innerHTML = "Məsələn:Html,Css,JavaScript dillərini bilirəm.Digər dillərədə biraz hakiməm:BootStrap,Swiper,OverCarusel,ScrollMagic,Materialİcons və sairə...Bu kimi kitabxanalara da hakiməm və həmişə örgənməyə davam edəcəyəm.Düzəltdiyim proyeklərə isə aşağıdakı proyektlər bölməsindən baxa bilərsiniz."
-        about_section_info_download_cv_btn.innerHTML = "CV-mi Yüklə"
-        about_section_info_hire_me_btn.innerHTML = "Əlaqə Qurun"
-        contact_item_phone.innerHTML = "Telefon"
-        contact_send_message.innerHTML = "Əlaqə Qur"
-        about_section_about_tabs_skills_span.innerHTML = "Yetənəklər" 
-        about_section_about_tabs_experience_span.innerHTML = "Təcrübələr" 
-        about_section_about_tabs_education_span.innerHTML = "Təhsil" 
-        about_section_first_experience__item_span.innerHTML = "Burada işlədiyim müddətcə çox təcrübə qazandım və artıq iş dünyasına hakim olmağa başlamışam."
-        about_section_second_experience__item_span.innerHTML = "Yaşım az olduğu üçün çox yerdə işləməmişəm.Lakin 2019-cu ildən etibarən hər an yeni bir şey örgənmək üçün çabalayıram."
-        about_section_education_first_education_timeline_p.innerHTML = "Hələki orta məktəbdə təhsil alıram.Lakin hədəfim ilk öncə Türkiyədə oxumaq sonra isə Amerikaya getməkdir." 
-        about_section_education_first_education_timeline_h3.innerHTML = "Orta Məktəb"
-        about_section_education_first_education_timeline_span.innerHTML = "2010 - Hələ də Orta Məktəbdə Təhsil Alıram"
-        service_section_title.innerHTML = "Nələr Edə Bilirəm"
-        portfolio_section_title.innerHTML = "Son İşlərim"
-        contact_section_title.innerHTML = "Mənimlə Əlaqə"
-    }
-    else if(language == 'en'){
-        changeLanguagesBtnTextContent.innerHTML = 'AZ';
-        language = 'az';
-        homeSection_home_text_p.innerHTML = 'Hello';
-        homeSection_home_text_h2.innerHTML = "I'm Muxtar";
-        homeSection_home_text_h1.innerHTML = "Web Designer & Developer";
-        more_about_me_btn.innerHTML = "More About Me";
-        about_section_title.innerHTML = "About Me";
-        about_section_info_first_p.innerHTML = "<span>Hi! My name is The Muxtar. I am a Web Developer.</span> I live in Baku, Azerbaijan.I'am 16.I love to explore and learn new and high technologies. I love this job too)). I am still learning this business, I am open to innovations, I am constantly trying to improve myself."
-        about_section_info_second_p.innerHTML = "For example: I know Html, Css, JavaScript. I am a bit of a master of other languages.I also know libraries like this: BootStrap, Swiper, OverCarusel, ScrollMagic, MaterialIcons and so... , I will always continue to learn.You can see the projects I created in the projects section below."
-        about_section_info_download_cv_btn.innerHTML = "Hire Me"
-        contact_item_phone.innerHTML = "Phone"
-        contact_send_message.innerHTML = "Send Message"
-        about_section_about_tabs_skills_span.innerHTML = "skills" 
-        about_section_about_tabs_experience_span.innerHTML = "experience" 
-        about_section_about_tabs_education_span.innerHTML = "education" 
-        about_section_first_experience__item_span.innerHTML = "While working here, I gained a lot of experience and have already begun to dominate the business world."
-        about_section_second_experience__item_span.innerHTML = "I haven't worked in many places because I'm young. But since 2019, I'm always trying to learn something new."
-        about_section_education_first_education_timeline_p.innerHTML = "I am still studying in high school. But my goal is to study in Turkey first and then go to America."
-        about_section_education_first_education_timeline_h3.innerHTML = "High school"
-        about_section_education_first_education_timeline_span.innerHTML = "2010 - I'm still study in High school"
-        service_section_title.innerHTML = "What I Do"
-        portfolio_section_title.innerHTML = "Latest Works"
-        contact_section_title.innerHTML = "Get In Touch"
-    }
-})
+// let language = 'az';
+// changeLanguagesBtn.addEventListener('click' , (e) => {
+//     if(language == 'az'){
+//         changeLanguagesBtnTextContent.innerHTML = 'EN';
+//         language = 'en';
+//         homeSection_home_text_p.innerHTML = 'Salam';
+//         homeSection_home_text_h2.innerHTML = "Mən Muxtar";
+//         homeSection_home_text_h1.innerHTML = "Web Designer & Developer";
+//         more_about_me_btn.innerHTML = "Haqqımda Daha Çox";
+//         about_section_title.innerHTML = "Mənim Haqqımda";
+//         about_section_info_first_p.innerHTML = '<span>Salam! Mənim adım Muxtardır. Mən Web Developerəm.</span>Yeni və yüksək texnologiyaları araşdırmağı və örgənməyi sevirəm.Bu işi də sevirəm)).Mən hələdə bu işi örgənirəm, yeniliklərə açığam,dayanmadan özümü inkişaf etdirməyə çalışıram.Lakin az yaşıma baxmayaraq bir çox sahəyə hakiməm.'
+//         about_section_info_second_p.innerHTML = "Məsələn:Html,Css,JavaScript dillərini bilirəm.Digər dillərədə biraz hakiməm:BootStrap,Swiper,OverCarusel,ScrollMagic,Materialİcons və sairə...Bu kimi kitabxanalara da hakiməm və həmişə örgənməyə davam edəcəyəm.Düzəltdiyim proyeklərə isə aşağıdakı proyektlər bölməsindən baxa bilərsiniz."
+//         about_section_info_download_cv_btn.innerHTML = "CV-mi Yüklə"
+//         about_section_info_hire_me_btn.innerHTML = "Əlaqə Qurun"
+//         contact_item_phone.innerHTML = "Telefon"
+//         contact_send_message.innerHTML = "Əlaqə Qur"
+//         about_section_about_tabs_skills_span.innerHTML = "Yetənəklər" 
+//         about_section_about_tabs_experience_span.innerHTML = "Təcrübələr" 
+//         about_section_about_tabs_education_span.innerHTML = "Təhsil" 
+//         about_section_first_experience__item_span.innerHTML = "Burada işlədiyim müddətcə çox təcrübə qazandım və artıq iş dünyasına hakim olmağa başlamışam."
+//         about_section_second_experience__item_span.innerHTML = "Yaşım az olduğu üçün çox yerdə işləməmişəm.Lakin 2019-cu ildən etibarən hər an yeni bir şey örgənmək üçün çabalayıram."
+//         about_section_education_first_education_timeline_p.innerHTML = "Hələki orta məktəbdə təhsil alıram.Lakin hədəfim ilk öncə Türkiyədə oxumaq sonra isə Amerikaya getməkdir." 
+//         about_section_education_first_education_timeline_h3.innerHTML = "Orta Məktəb"
+//         about_section_education_first_education_timeline_span.innerHTML = "2010 - Hələ də Orta Məktəbdə Təhsil Alıram"
+//         service_section_title.innerHTML = "Nələr Edə Bilirəm"
+//         portfolio_section_title.innerHTML = "Son İşlərim"
+//         contact_section_title.innerHTML = "Mənimlə Əlaqə"
+//     }
+//     else if(language == 'en'){
+//         changeLanguagesBtnTextContent.innerHTML = 'AZ';
+//         language = 'az';
+//         homeSection_home_text_p.innerHTML = 'Hello';
+//         homeSection_home_text_h2.innerHTML = "I'm Muxtar";
+//         homeSection_home_text_h1.innerHTML = "Web Designer & Developer";
+//         more_about_me_btn.innerHTML = "More About Me";
+//         about_section_title.innerHTML = "About Me";
+//         about_section_info_first_p.innerHTML = "<span>Hi! My name is The Muxtar. I am a Web Developer.</span> I live in Baku, Azerbaijan.I'am 16.I love to explore and learn new and high technologies. I love this job too)). I am still learning this business, I am open to innovations, I am constantly trying to improve myself."
+//         about_section_info_second_p.innerHTML = "For example: I know Html, Css, JavaScript. I am a bit of a master of other languages.I also know libraries like this: BootStrap, Swiper, OverCarusel, ScrollMagic, MaterialIcons and so... , I will always continue to learn.You can see the projects I created in the projects section below."
+//         about_section_info_download_cv_btn.innerHTML = "Hire Me"
+//         contact_item_phone.innerHTML = "Phone"
+//         contact_send_message.innerHTML = "Send Message"
+//         about_section_about_tabs_skills_span.innerHTML = "skills" 
+//         about_section_about_tabs_experience_span.innerHTML = "experience" 
+//         about_section_about_tabs_education_span.innerHTML = "education" 
+//         about_section_first_experience__item_span.innerHTML = "While working here, I gained a lot of experience and have already begun to dominate the business world."
+//         about_section_second_experience__item_span.innerHTML = "I haven't worked in many places because I'm young. But since 2019, I'm always trying to learn something new."
+//         about_section_education_first_education_timeline_p.innerHTML = "I am still studying in high school. But my goal is to study in Turkey first and then go to America."
+//         about_section_education_first_education_timeline_h3.innerHTML = "High school"
+//         about_section_education_first_education_timeline_span.innerHTML = "2010 - I'm still study in High school"
+//         service_section_title.innerHTML = "What I Do"
+//         portfolio_section_title.innerHTML = "Latest Works"
+//         contact_section_title.innerHTML = "Get In Touch"
+//     }
+// })
